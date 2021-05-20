@@ -1,1 +1,2 @@
-This is the repository about python script. Each branch solves a specific problem.
+# Crawl
+a simple crawl for douban 
