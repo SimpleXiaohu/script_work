@@ -1,2 +1,1 @@
-# ostrich-debug
-tmp repository for bug finding of ostrich
+This is the repository about python script. Each branch solves a specific problem.
