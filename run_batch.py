@@ -13,7 +13,7 @@ def run_ostrich(newDir):
         f.write(f"{newDir}:\n {ret.stdout}\n")
 
 
-def handle_tar_rec(folderpath):
+def handle_rar_rec(folderpath):
     global fileTailNum
     global resFolderName
     pathDir = os.listdir(folderpath)      #获取当前路径下的文件名，返回List
@@ -23,16 +23,16 @@ def handle_tar_rec(folderpath):
             if os.path.splitext(newDir)[1]==".smt2":
                 run_ostrich(newDir)
         else:
-            handle_tar_rec(newDir)                #如果不是文件，递归这个文件夹的路径
+            handle_rar_rec(newDir)                #如果不是文件，递归这个文件夹的路径
 
 def handle_tar(tgzpath):
     tmp_package = os.path.splitext(tgzpath)[0]
     if os.path.exists(tmp_package):
         shutil.rmtree(tmp_package)
     os.mkdir(tmp_package)
-    os.system('echo tar -xzvf ' + tgzpath + ' -C ' + tmp_package)
-    os.system('tar -xzvf ' + tgzpath + ' -C ' + tmp_package + " >tmp.txt 2>&1") 
-    handle_tar_rec(tmp_package)
+    os.system('echo unrar e ' + tgzpath + tmp_package + " >tmp.txt 2>&1")
+    os.system('tar -xzvf ' + tgzpath  + tmp_package) 
+    handle_rar_rec(tmp_package)
     shutil.rmtree(tmp_package)
 
 
