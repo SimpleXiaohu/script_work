@@ -4,6 +4,15 @@ ostrichCommand = "java -jar E:\hanzhilei\ostrich\\target\scala-2.11\ostrich-asse
 jsCommand = "node "
 benchmarkLen2 = ".\len2\\"
 jsFolder = ".\js-benchmark\\"
+res = "res.txt"
+
+def cleanFile(file):
+    with open(file, "w", encoding="utf8") as f:
+        f.flush()
+def writeFile(file, line):
+    with open(file, "a+", encoding="utf8") as f:
+        f.write(line)
+        f.flush()
 
 def eachFile(filepath):
     pathDir = os.listdir(filepath)      #获取当前路径下的文件名，返回List
@@ -38,6 +47,11 @@ def consisTest(smtFile):
     ostrichResStr = re.search(reg ,str(ostrichRet.stdout), re.M).group(1)
     jsResStr = str(jsRet.stdout)[2:-3]   # jsRet.stdout is like b'str\n'
     if(jsResStr != ostrichResStr):
-        print(f"not consistent: {smtFile}, ostrichRes={ostrichResStr}, jsRes={jsResStr}")
+        writeFile(res, f"not consistent: {smtFile}, ostrichRes={ostrichResStr}, jsRes={jsResStr}\n")
+        with open(jsFile, "r", encoding="utf8") as f:
+            jsContent = f.read()
+        writeFile(res, f"{jsFile}:\n{jsContent}\n")
+        writeFile(res, "------------------------------------------\n")
 
+cleanFile(res)
 eachFile(benchmarkLen2)
