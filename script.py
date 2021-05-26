@@ -16,6 +16,7 @@ def cpExecutableJar():
         os.system("cp ./target/scala-*/ostrich-assembly*.jar ostrich-assembly-1.0.jar")
 
 if __name__== "__main__":
+    os.system("chmod 755 ./a")
     if len(sys.argv) != 2:
         print("use : python script.py fileName")
         exit(1)
