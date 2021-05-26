@@ -46,16 +46,16 @@ if __name__== "__main__":
         pass
     if len(ic3) > 0 :
         os.killpg(bmc_pid[0], signal.SIGKILL)
-        print(ic3[0])  # 0:-1 is used to delete "\n"
+        print(f"{ic3[0][0][0:-1]}        {ic3[0][1][0:-1]}")  # 0:-1 is used to delete "\n"
         #p_ic3.join()
     elif 'sat\n' in bmc[0] :
         os.killpg(ic3_pid[0], signal.SIGKILL)
-        print(bmc[0])
+        print(f"{bmc[0][0][0:-1]}        {bmc[0][1][0:-1]}")  # 0:-1 is used to delete "\n"
         #p_bmc.join()
     else:
         while (len(ic3) == 0) :
             pass
-        print(ic3[0])
+        print(f"{ic3[0][0][0:-1]}        {ic3[0][1][0:-1]}")  # 0:-1 is used to delete "\n"
 
 
 
