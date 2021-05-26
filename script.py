@@ -22,6 +22,9 @@ if __name__== "__main__":
     # absolut dirname of file "nuxmv"
     parentDir = str(os.path.dirname(os.path.abspath("./nuxmv")))
     print(parentDir) 
+    if(not parentDir in os.getenv("PATH")):
+        # nuxmv is not in the PATH variable
+        os.system(f"export PATH=\"$PATH:{parentDir}\"")
     if len(sys.argv) != 2:
         print("use : python script.py fileName")
         exit(1)
@@ -43,16 +46,16 @@ if __name__== "__main__":
         pass
     if len(ic3) > 0 :
         os.killpg(bmc_pid[0], signal.SIGKILL)
-        print(ic3[0][0][0:-1])  # 0:-1 is used to delete "\n"
+        print(ic3[0])  # 0:-1 is used to delete "\n"
         #p_ic3.join()
     elif 'sat\n' in bmc[0] :
         os.killpg(ic3_pid[0], signal.SIGKILL)
-        print(bmc[0][0][0:-1])
+        print(bmc[0])
         #p_bmc.join()
     else:
         while (len(ic3) == 0) :
             pass
-        print(ic3[0][0][0:-1])
+        print(ic3[0])
 
 
 
