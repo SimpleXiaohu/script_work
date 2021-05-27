@@ -51,7 +51,7 @@ def eachFile(filepath):
 
 fileTailNum = 0
 cmd = "python3 script.py"
-res = f"{sys.argv[1][2:-4]}_res.txt"    # sys.argv[1] is the rar being runed
+res = f"{sys.argv[1][:-4]}_res.txt"    # sys.argv[1] is the rar being runed
 # clear the existing res file
 with open(res, "w") as f:
     f.close()
