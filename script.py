@@ -19,12 +19,6 @@ if __name__== "__main__":
     # 
     os.system("chmod 755 ./a")
     os.system("chmod 755 ./nuxmv")
-    # absolut dirname of file "nuxmv"
-    parentDir = str(os.path.dirname(os.path.abspath("./nuxmv")))
-    print(parentDir) 
-    if(not parentDir in os.getenv("PATH")):
-        # nuxmv is not in the PATH variable
-        os.system(f"export PATH=\"$PATH:{parentDir}\"")
     if len(sys.argv) != 2:
         print("use : python script.py fileName")
         exit(1)
