@@ -6,9 +6,12 @@ import argparse
 # some utils ----------------------------------------------
 def writeFileA(file, line):
     # write file with flag "a"
-    with open(file, "a+", encoding="utf8") as f:
-        f.write(line)
-        f.flush()
+    if(not os.path.exists(file)):
+        writeFileW(file, line)
+    else:
+        with open(file, "a+", encoding="utf8") as f:
+            f.write(line)
+            f.flush()
 def clearFile(file):
     with open(file, "w", encoding="utf8") as f:
         f.close()
@@ -32,59 +35,71 @@ def mkdir(path):
         os.mkdir(path)
 # some utils ----------------------------------------------
 
-def run_ostrich(newDir):
-    global cmd 
-    ret = subprocess.run(f"{cmd} {newDir}",shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE,encoding="utf-8")
-    print(f"{newDir}:\n {ret.stdout}")
-    writeFileA(resFile, f"{newDir} : {ret.stdout}\n")
+# run the test for a specific file, write the res to result file 
+def run(cmd, file):
+    ret = subprocess.run(f"{cmd} {file}",shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE,encoding="utf-8")
+    print(f"{file}:\n {ret.stdout}")
+    # count the result 
+    counter(ret, counterList)
+    writeFileA(resFile, f"{file} : {ret.stdout}\n")
 
-def handle_rar_rec(folderpath):
-    pathDir = os.listdir(folderpath)      #获取当前路径下的文件名，返回List
+# accemulate the counter in the "counterList" based on the result "ret"
+def counter(ret, counterList):
+    print("if need counter, please implement it")
+
+# write the counting result to res.txt
+def writeCounter(file, counterList):
+    print("if need counter, please implement it")
+
+
+
+# handle_package could input a packge(like .rar, .tar), and you should specify the function un_package. 
+# it can input a folder as well.
+def handle_package(pkgPath):
+    tmp_package = os.path.splitext(pkgPath)[0]
+    if not os.path.exists(tmp_package):
+        un_package(tmp_package, pkgPath)
+    handle_package_rec(tmp_package)
+
+# unpakage the package "pkgPath" to folder "pkgFolder"
+def un_package(pkgFolder, pkgPath):
+    os.mkdir(pkgFolder)
+    os.system(f'echo unrar e {pkgPath} {pkgFolder}')
+    os.system(f'unrar e {pkgPath} {pkgFolder} > /dev/null 2>&1')
+
+# run the folder recursively
+def handle_package_rec(folderpath):
+    pathDir = os.listdir(folderpath)      
     for s in pathDir:
-        newDir=os.path.join(folderpath,s)     #将文件命加入到当前文件路径后面
-        if os.path.isfile(newDir) :         #如果是文件
-            # print(newDir)
-            print(already)
+        newDir=os.path.join(folderpath,s)     
+        if os.path.isfile(newDir) :        
             if(newDir in already):
+            # do not test the file alreay tested
                 continue
             if os.path.splitext(newDir)[1]==".smt2":
-                run_ostrich(newDir)
+                run(cmd, newDir)
                 writeFileA(alreadyFile, newDir)
         else:
-            handle_rar_rec(newDir)                #如果不是文件，递归这个文件夹的路径
+            handle_package_rec(newDir)                            
 
-def handle_rar(tgzpath):
-    tmp_package = os.path.splitext(tgzpath)[0]
-    if not os.path.exists(tmp_package):
-        os.mkdir(tmp_package)
-        os.system(f'echo unrar e {tgzpath} {tmp_package}')
-        os.system(f'unrar e {tgzpath} {tmp_package} > /dev/null 2>&1') 
-    handle_rar_rec(tmp_package)
-    # shutil.rmtree(tmp_package)
-
-def eachFile(filepath):
-    pathDir = os.listdir(filepath)      #获取当前路径下的文件名，返回List
-    for s in pathDir:
-        newDir=os.path.join(filepath,s)     #将文件命加入到当前文件路径后面
-        if newDir == already:
-            continue
-        if os.path.isfile(newDir) :         #如果是文件
-            if os.path.splitext(newDir)[1]==".rar":  #判断是否是tar
-                handle_rar(newDir)                     #读文件（或者做其他的操作）
-                pass
-        else:
-            eachFile(newDir)                #如果不是文件，递归这个文件夹的路径
-
-resDir = f"{sys.argv[1][:-4]}_res"
+# main script 
+parser = argparse.ArgumentParser()
+parser.add_argument("testfile", type=str, default="")
+parser.add_argument("-already", type=str, default=f"./already.txt")    # input alreay file
+parser.add_argument("-needCount", type=int, default=0)    
+# input how many types of res need counting (e.g, if we have two types of result [sat, unsat], then the -needCout = 2)
+args = parser.parse_args()
+needCount = args.needCount
+counterList = [0 for i in range(0, needCount)]
+testfile = args.testfile
+resDir = f"{os.path.splitext(os.path.basename(testfile))[0]}_res"
 mkdir(resDir)
 cmd = "python3 script.py"
-parser = argparse.ArgumentParser()
-parser.add_argument("-already", type=str, default=f"./{resDir}/already.txt")    # input alreay file
-currentTime = datetime.datetime.now().strftime('%Y-%m-%d-%H:%M:%S') # use current time to distinguish res.txt
+currentTime = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S') # use current time to distinguish res.txt
 resFile = f"./{resDir}/res-{currentTime}.txt"    # sys.argv[1] is the rar being runed
-alreadyFile = # use already to track files has been test, avoid repeatedly test. (Like checkpoint)
+alreadyFile = args.already# use already to track files has been test, avoid repeatedly test. (Like checkpoint)
+print(alreadyFile)
 already = readFile(alreadyFile)
 # clear the existing res file
-clearFile(resFile)
-handle_rar(sys.argv[1])
-writeFileA(resFile, "done\n")
+handle_package(sys.argv[1])
+writeCounter(resFile, counterList)
