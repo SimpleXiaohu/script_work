@@ -46,6 +46,9 @@ def consisTest(smtFile):
         print(smtFile)
     ostrichResStr = re.search(reg ,str(ostrichRet.stdout), re.M).group(1)
     jsResStr = str(jsRet.stdout)[2:-3]   # jsRet.stdout is like b'str\n'
+    if("undefined" in jsResStr and "\\u{0}" in ostrichResStr):
+        # when ostrich return "\\u{0}", it means undefined
+        return 
     if(jsResStr != ostrichResStr):
         writeFile(res, f"not consistent: {smtFile}, ostrichRes={ostrichResStr}, jsRes={jsResStr}\n")
         with open(jsFile, "r", encoding="utf8") as f:

@@ -18,195 +18,15 @@ not consistent: .\len2\restest-118.smt2, ostrichRes=a, jsRes=aaaa
 var x = "aaaaaaaaaa\u{1}"
 console.log(x.match(/^([a-z]{1,4}?){1,4}?[^A-Za-z0-9]/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-133.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-133.js:
-var x = "a0\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])|[0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-134.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-134.js:
-var x = "a000000000\u{1}"
-console.log(x.match(/^([a-z][A-Z])|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-135.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-135.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-140.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-140.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]+)|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-141.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-141.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]+?)|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-142.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-142.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]{1,4})|[^A-Za-z0-9]/)[1])
-------------------------------------------
 not consistent: .\len2\restest-143.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-143.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)|[^A-Za-z0-9]/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-144.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-144.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^(([a-z]))|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-145.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-145.js:
-var x = "a000000000\u{1}"
-console.log(x.match(/^([a-z][A-Z])|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-150.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-150.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]+)|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-151.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-151.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]+?)|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-152.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-152.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]{1,4})|[^A-Za-z0-9]/)[1])
-------------------------------------------
 not consistent: .\len2\restest-153.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-153.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-154.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-154.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^(([a-z]))|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-156.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-156.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])*|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-157.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-157.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])*|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-158.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-158.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*)*|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-159.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-159.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*?)*|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-160.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-160.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]?)*|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-161.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-161.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]??)*|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-162.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-162.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)*|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-163.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-163.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)*|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-164.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-164.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})*|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-165.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-165.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4}?)*|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-166.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-166.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))*|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-168.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-168.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])*?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-169.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-169.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])*?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-170.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-170.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*)*?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-171.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-171.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*?)*?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-172.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-172.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]?)*?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-173.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-173.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]??)*?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-174.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-174.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)*?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-175.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-175.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)*?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-176.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-176.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})*?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-177.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-177.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4}?)*?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-178.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-178.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))*?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-180.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-180.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-181.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-181.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])?|[^A-Za-z0-9]/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-182.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-182.js:
@@ -228,40 +48,10 @@ not consistent: .\len2\restest-185.smt2, ostrichRes=, jsRes=undefined
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]??)?|[^A-Za-z0-9]/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-186.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-186.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-187.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-187.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-188.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-188.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})?|[^A-Za-z0-9]/)[1])
-------------------------------------------
 not consistent: .\len2\restest-189.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-189.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-190.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-190.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-192.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-192.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])??|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-193.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-193.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])??|[^A-Za-z0-9]/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-194.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-194.js:
@@ -283,680 +73,45 @@ not consistent: .\len2\restest-197.smt2, ostrichRes=, jsRes=undefined
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]??)??|[^A-Za-z0-9]/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-198.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-198.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)??|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-199.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-199.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)??|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-200.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-200.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})??|[^A-Za-z0-9]/)[1])
-------------------------------------------
 not consistent: .\len2\restest-201.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-201.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)??|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-202.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-202.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))??|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-203.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-203.js:
-var x = "0\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)|[0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-204.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-204.js:
-var x = "a000000000\u{1}"
-console.log(x.match(/^([a-z][A-Z])+|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-205.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-205.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])+|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-210.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-210.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]+)+|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-211.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-211.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]+?)+|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-212.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-212.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]{1,4})+|[^A-Za-z0-9]/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-213.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-213.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)+|[^A-Za-z0-9]/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-214.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-214.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^(([a-z]))+|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-215.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-215.js:
-var x = "0\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)|[0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-216.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-216.js:
-var x = "a000000000\u{1}"
-console.log(x.match(/^([a-z][A-Z])+?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-217.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-217.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])+?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-222.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-222.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]+)+?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-223.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-223.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]+?)+?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-224.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-224.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]{1,4})+?|[^A-Za-z0-9]/)[1])
-------------------------------------------
 not consistent: .\len2\restest-225.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-225.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)+?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-226.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-226.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^(([a-z]))+?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-227.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-227.js:
-var x = "0\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})|[0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-228.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-228.js:
-var x = "a000000000\u{1}"
-console.log(x.match(/^([a-z][A-Z]){1,4}|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-229.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-229.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]|[A-Z]){1,4}|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-234.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-234.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]+){1,4}|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-235.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-235.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]+?){1,4}|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-236.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-236.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^([a-z]{1,4}){1,4}|[^A-Za-z0-9]/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-237.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-237.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?){1,4}|[^A-Za-z0-9]/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-238.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-238.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^(([a-z])){1,4}|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-240.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-240.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z]){1,4}?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-241.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-241.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z]){1,4}?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-246.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-246.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+){1,4}?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-247.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-247.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?){1,4}?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-248.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-248.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4}){1,4}?|[^A-Za-z0-9]/)[1])
-------------------------------------------
 not consistent: .\len2\restest-249.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-249.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?){1,4}?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-250.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-250.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z])){1,4}?|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-251.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-251.js:
-var x = "0\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))|[0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-252.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-252.js:
-var x = "a000000000\u{1}"
-console.log(x.match(/^(([a-z][A-Z]))|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-253.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-253.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^(([a-z]|[A-Z]))|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-258.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-258.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^(([a-z]+))|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-259.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-259.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^(([a-z]+?))|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-260.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-260.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^(([a-z]{1,4}))|[^A-Za-z0-9]/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-261.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-261.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^(([a-z]{1,4}?))|[^A-Za-z0-9]/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-262.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-262.js:
-var x = "0000000000\u{1}"
-console.log(x.match(/^((([a-z])))|[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-264.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-264.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-265.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-265.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-266.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-266.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-267.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-267.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-268.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-268.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*?)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-269.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-269.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]?)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-270.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-270.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]??)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-271.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-271.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-272.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-272.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-273.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-273.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-274.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-274.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4}?)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-275.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-275.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-276.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-276.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-277.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-277.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-278.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-278.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-279.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-279.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-280.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-280.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*?)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-281.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-281.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]?)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-282.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-282.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]??)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-283.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-283.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-284.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-284.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-285.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-285.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-286.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-286.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4}?)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-287.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-287.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-298.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-298.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*?)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-310.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-310.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]?)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-322.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-322.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]??)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-334.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-334.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)*/)[1])
-------------------------------------------
 not consistent: .\len2\restest-34.smt2, ostrichRes=aa, jsRes=a
 .\js-benchmark\restest-34.js:
 var x = "aaaaaaaaaa\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)*[^A-Za-z0-9]/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-346.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-346.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-358.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-358.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-370.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-370.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4}?)*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-382.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-382.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-383.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-383.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z][A-Z]))*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-384.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-384.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]|[A-Z]))*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-385.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-385.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]*))*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-386.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-386.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]*?))*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-387.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-387.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]?))*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-388.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-388.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]??))*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-389.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-389.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]+))*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-390.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-390.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]+?))*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-391.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-391.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]{1,4}))*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-392.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-392.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]{1,4}?))*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-393.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-393.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^((([a-z])))*/)[1])
-------------------------------------------
-not consistent: .\len2\restest-395.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-395.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-396.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-396.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-397.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-397.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-398.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-398.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-399.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-399.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-400.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-400.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-401.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-401.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]??)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-402.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-402.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-403.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-403.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-404.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-404.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-405.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-405.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4}?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-406.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-406.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-407.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-407.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-408.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-408.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-409.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-409.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-410.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-410.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-411.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-411.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-412.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-412.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-413.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-413.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]??)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-414.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-414.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-415.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-415.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-416.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-416.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-417.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-417.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4}?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-418.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-418.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-419.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-419.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-441.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-441.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-453.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-453.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]??)*?/)[1])
-------------------------------------------
 not consistent: .\len2\restest-46.smt2, ostrichRes=aa, jsRes=a
 .\js-benchmark\restest-46.js:
 var x = "aaaaaaaaaa\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)*?[^A-Za-z0-9]/)[1])
-------------------------------------------
-not consistent: .\len2\restest-465.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-465.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-477.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-477.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-489.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-489.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-501.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-501.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4}?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-513.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-513.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-514.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-514.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z][A-Z]))*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-515.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-515.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]|[A-Z]))*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-516.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-516.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]*))*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-517.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-517.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]*?))*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-518.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-518.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]?))*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-519.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-519.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]??))*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-520.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-520.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]+))*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-521.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-521.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]+?))*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-522.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-522.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]{1,4}))*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-523.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-523.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]{1,4}?))*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-524.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-524.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^((([a-z])))*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-526.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-526.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-527.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-527.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-528.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-528.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])?/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-529.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-529.js:
@@ -978,45 +133,10 @@ not consistent: .\len2\restest-532.smt2, ostrichRes=, jsRes=undefined
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]??)?/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-533.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-533.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-534.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-534.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-535.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-535.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})?/)[1])
-------------------------------------------
 not consistent: .\len2\restest-536.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-536.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-537.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-537.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-538.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-538.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-539.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-539.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-540.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-540.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])?/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-541.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-541.js:
@@ -1038,105 +158,20 @@ not consistent: .\len2\restest-544.smt2, ostrichRes=, jsRes=undefined
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]??)?/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-545.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-545.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-546.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-546.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-547.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-547.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})?/)[1])
-------------------------------------------
 not consistent: .\len2\restest-548.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-548.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-549.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-549.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))?/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-550.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-550.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]*)?/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-551.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-551.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-552.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-552.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-553.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-553.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-554.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-554.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]*?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-555.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-555.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-556.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-556.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]??)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-557.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-557.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-558.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-558.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-559.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-559.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-560.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-560.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4}?)*?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-561.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-561.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))*?/)[1])
-------------------------------------------
 not consistent: .\len2\restest-562.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-562.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]*?)?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-574.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-574.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-575.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-575.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])??/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-576.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-576.js:
@@ -1153,70 +188,20 @@ not consistent: .\len2\restest-578.smt2, ostrichRes=, jsRes=undefined
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]??)??/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-579.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-579.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-580.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-580.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-581.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-581.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})??/)[1])
-------------------------------------------
 not consistent: .\len2\restest-582.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-582.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-583.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-583.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))??/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-584.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-584.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]??)?/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-596.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-596.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-608.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-608.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-620.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-620.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})?/)[1])
-------------------------------------------
 not consistent: .\len2\restest-632.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-632.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-644.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-644.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-645.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-645.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z][A-Z]))?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-646.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-646.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]|[A-Z]))?/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-647.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-647.js:
@@ -1238,45 +223,10 @@ not consistent: .\len2\restest-650.smt2, ostrichRes=, jsRes=undefined
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^(([a-z]??))?/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-651.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-651.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]+))?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-652.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-652.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]+?))?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-653.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-653.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]{1,4}))?/)[1])
-------------------------------------------
 not consistent: .\len2\restest-654.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-654.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^(([a-z]{1,4}?))?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-655.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-655.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^((([a-z])))?/)[1])
-------------------------------------------
-not consistent: .\len2\restest-657.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-657.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-658.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-658.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-659.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-659.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])??/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-660.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-660.js:
@@ -1298,45 +248,10 @@ not consistent: .\len2\restest-663.smt2, ostrichRes=, jsRes=undefined
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]??)??/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-664.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-664.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-665.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-665.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-666.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-666.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})??/)[1])
-------------------------------------------
 not consistent: .\len2\restest-667.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-667.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-668.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-668.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-669.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-669.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-670.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-670.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z][A-Z])??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-671.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-671.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]|[A-Z])??/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-672.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-672.js:
@@ -1358,30 +273,10 @@ not consistent: .\len2\restest-675.smt2, ostrichRes=, jsRes=undefined
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]??)??/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-676.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-676.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-677.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-677.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-678.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-678.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})??/)[1])
-------------------------------------------
 not consistent: .\len2\restest-679.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-679.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-680.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-680.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))??/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-681.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-681.js:
@@ -1398,40 +293,10 @@ not consistent: .\len2\restest-705.smt2, ostrichRes=, jsRes=undefined
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]?)??/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-727.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-727.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+)??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-739.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-739.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]+?)??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-751.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-751.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^([a-z]{1,4})??/)[1])
-------------------------------------------
 not consistent: .\len2\restest-763.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-763.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^([a-z]{1,4}?)??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-775.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-775.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]))??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-776.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-776.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z][A-Z]))??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-777.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-777.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]|[A-Z]))??/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-778.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-778.js:
@@ -1453,30 +318,10 @@ not consistent: .\len2\restest-781.smt2, ostrichRes=, jsRes=undefined
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^(([a-z]??))??/)[1])
 ------------------------------------------
-not consistent: .\len2\restest-782.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-782.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]+))??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-783.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-783.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]+?))??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-784.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-784.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^(([a-z]{1,4}))??/)[1])
-------------------------------------------
 not consistent: .\len2\restest-785.smt2, ostrichRes=, jsRes=undefined
 .\js-benchmark\restest-785.js:
 var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
 console.log(x.match(/^(([a-z]{1,4}?))??/)[1])
-------------------------------------------
-not consistent: .\len2\restest-786.smt2, ostrichRes=\\u{0}, jsRes=undefined
-.\js-benchmark\restest-786.js:
-var x = "\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"
-console.log(x.match(/^((([a-z])))??/)[1])
 ------------------------------------------
 not consistent: .\len2\restest-82.smt2, ostrichRes=aa, jsRes=a
 .\js-benchmark\restest-82.js:
