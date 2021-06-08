@@ -57,4 +57,5 @@ def consisTest(smtFile):
         writeFile(res, "------------------------------------------\n")
 
 cleanFile(res)
-eachFile(benchmarkLen2)
+# eachFile(benchmarkLen2)
+eachFile("./len3/")

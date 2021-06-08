@@ -2,8 +2,8 @@ import os,subprocess,re
 import shutil
 
 ostrich_command = "java -jar E:\hanzhilei\ostrich\\target\scala-2.11\ostrich-assembly-1.0.jar +incremental "
-benchmarkLen1 = ".\len1\\"
-benchmarkLen2 = ".\len2\\"
+benchmarkLen1 = ".\len-1\\"
+benchmarkLen2 = ".\len-2\\"
 jsFolder = ".\js-benchmark\\"
 
 def eachFile(filepath):
@@ -25,11 +25,12 @@ def runOstrich(filepath):
         reg = r"\(define-fun var0 \(\) String \"(.*)\".*"
         if(re.search(reg ,str(ret.stdout), re.M) == None):
             print(filepath)
+            print(ret.stdout)
         var0Str = re.search(reg ,str(ret.stdout), re.M).group(1)
         repl = f"(assert (= var0 \"{var0Str}\"))"
         len2BeReplFile = benchmarkLen2 + os.path.basename(filepath)
         replaceLen2(len2BeReplFile, repl)
-        # genJsBench(len2BeReplFile, var0Str)
+        genJsBench(len2BeReplFile, var0Str)
         # print(f"{os.path.basename(filepath)} : huziadd(assert (= var0 \"{var0Str})\")")
 
 def replaceLen2(filepath, repl):
@@ -43,7 +44,6 @@ def replaceLen2(filepath, repl):
         f.flush()    
 
 def genJsBench(filepath, concreStr):
-    reFresh(jsFolder)
     regex = ""
     with open(filepath, "r", encoding="utf8") as f:
         read = f.readline()
