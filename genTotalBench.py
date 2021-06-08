@@ -1,7 +1,8 @@
 import os,subprocess,re
 import shutil
 
-ostrich_command = "java -jar E:\hanzhilei\ostrich\\target\scala-2.11\ostrich-assembly-1.0.jar +incremental "
+# ostrich_command = "java -jar E:\hanzhilei\ostrich\\target\scala-2.11\ostrich-assembly-1.0.jar +incremental "
+ostrich_command = "java -jar ostrich-assembly-1.0.jar +incremental "    # use this in computing server 
 benchmarkLen1 = ".\len-1\\"
 benchmarkLen2 = ".\len-2\\"
 jsFolder = ".\js-benchmark\\"
