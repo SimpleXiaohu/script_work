@@ -12,7 +12,7 @@
 
 (assert (= res ((_ str.extract 1) var0 (re.++ re.begin-anchor (re.++ ((_ re.capture 1) ((_ re.loop 1 4) (re.range "a" "z"))) (re.++ (re.range "0" "9") re.all))))))
 
-(hu add something)
+(assert (= var0 "aaaa0\u{1}\u{1}\u{1}\u{1}\u{1}\u{1}"))
 
 (check-sat)
 (get-model)

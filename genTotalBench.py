@@ -3,9 +3,9 @@ import shutil
 
 # ostrich_command = "java -jar E:\hanzhilei\ostrich\\target\scala-2.11\ostrich-assembly-1.0.jar +incremental "
 ostrich_command = "java -jar ostrich-assembly-1.0.jar +incremental "    # use this in computing server 
-benchmarkLen1 = ".\len-1\\"
-benchmarkLen2 = ".\len-2\\"
-jsFolder = ".\js-benchmark\\"
+benchmarkLen1 = "./len-1/"
+benchmarkLen2 = "./len-2/"
+jsFolder = "./js-benchmark/"
 
 def eachFile(filepath):
     pathDir = os.listdir(filepath)      #获取当前路径下的文件名，返回List
@@ -32,7 +32,7 @@ def runOstrich(filepath):
         len2BeReplFile = benchmarkLen2 + os.path.basename(filepath)
         replaceLen2(len2BeReplFile, repl)
         genJsBench(len2BeReplFile, var0Str)
-        # print(f"{os.path.basename(filepath)} : huziadd(assert (= var0 \"{var0Str})\")")
+        print(f"{os.path.basename(filepath)} : huziadd(assert (= var0 \"{var0Str})\")")
 
 def replaceLen2(filepath, repl):
     res = ""
@@ -63,4 +63,5 @@ def reFresh(path):
         shutil.rmtree(path)
     os.mkdir(path)
 
+reFresh(jsFolder)
 eachFile(benchmarkLen1)

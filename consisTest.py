@@ -1,11 +1,18 @@
 import os,subprocess,re
 
-ostrichCommand = "java -jar E:\hanzhilei\ostrich\\target\scala-2.11\ostrich-assembly-1.0.jar +incremental "
+ostrichCommand = "java -jar ostrich-assembly-1.0.jar +incremental "
+# ostrichCommand = "java -jar E:\hanzhilei\ostrich\\target\scala-2.11\ostrich-assembly-1.0.jar +incremental "
 jsCommand = "node "
-benchmarkLen2 = ".\len2\\"
-jsFolder = ".\js-benchmark\\"
+benchmarkLen2 = "./len-2/"
+jsFolder = "./js-benchmark/"
 res = "res.txt"
 
+def readFile(file):
+    res = ""
+    if os.path.exists(file):
+        with open(file, "r", encoding="utf8") as f:
+            res = f.read()
+    return res
 def cleanFile(file):
     with open(file, "w", encoding="utf8") as f:
         f.flush()
@@ -53,9 +60,10 @@ def consisTest(smtFile):
         writeFile(res, f"not consistent: {smtFile}, ostrichRes={ostrichResStr}, jsRes={jsResStr}\n")
         with open(jsFile, "r", encoding="utf8") as f:
             jsContent = f.read()
-        writeFile(res, f"{jsFile}:\n{jsContent}\n")
+        ostrichContent = readFile(smtFile)
+        writeFile(res, f"{jsFile}:\n{jsContent}\n\n{smtFile}:\n{ostrichContent}\n")
         writeFile(res, "------------------------------------------\n")
 
 cleanFile(res)
-# eachFile(benchmarkLen2)
-eachFile("./len3/")
+eachFile(benchmarkLen2)
+# eachFile("./len3/")
