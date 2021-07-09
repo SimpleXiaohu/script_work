@@ -43,7 +43,7 @@ def run(cmd, file):
     counter(ret, counterList)
     writeFileA(resFile, f"{file} : {ret.stdout}\n")
 
-# accemulate the counter in the counterList based on the res
+# accemulate the counter in the "counterList" based on the result "ret"
 def counter(ret, counterList):
     print("if need counter, please implement it")
 
