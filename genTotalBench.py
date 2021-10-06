@@ -12,10 +12,8 @@ def eachFile(filepath):
     for s in pathDir:
         newDir=os.path.join(filepath,s)     #将文件命加入到当前文件路径后面
         if os.path.isfile(newDir) :         #如果是文件
-            #if os.path.splitext(newDir)[1]==".smt2":  #判断是否是txt
-             if os.path.splitext(newDir)[1]==".smt":  #判断是否是txt
-                #runOstrich(newDir)                     #读文件（或者做其他的操作）
-                os.rename(newDir, newDir+"2")
+            if os.path.splitext(newDir)[1]==".smt2":  #判断是否是txt
+                runOstrich(newDir)                     #读文件（或者做其他的操作）
                 pass
         else:
             eachFile(newDir)                #如果不是文件，递归这个文件夹的路径
@@ -65,4 +63,3 @@ def reFresh(path):
 
 reFresh(jsFolder)
 eachFile(benchmarkLen1)
-eachFile(benchmarkLen2)
