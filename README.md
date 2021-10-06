@@ -1,2 +1,7 @@
-# gen_re_testcase
-Generate regular expression to test whether the sematic of ostrich is consistent with ECMA6.
+# ostrich semantical correctness
+
+Run command
+```
+python3 consisTest.py
+```
+If there are non-consistent result, will output the file that lead to it.
