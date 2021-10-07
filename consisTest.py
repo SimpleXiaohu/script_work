@@ -53,6 +53,7 @@ def consisTest(smtFile):
         print(smtFile)
     ostrichResStr = re.search(reg ,str(ostrichRet.stdout), re.M).group(1)
     jsResStr = str(jsRet.stdout)[2:-3]   # jsRet.stdout is like b'str\n'
+    writeFile(res, f"ostrich res: {ostrichResStr}, node.js res: {jsResStr}\n")
     if("undefined" in jsResStr and "\\u{0}" in ostrichResStr):
         # when ostrich return "\\u{0}", it means undefined
         return 
@@ -66,4 +67,3 @@ def consisTest(smtFile):
 
 cleanFile(res)
 eachFile(benchmarkLen2)
-# eachFile("./len3/")
