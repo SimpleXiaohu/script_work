@@ -1,0 +1,87 @@
+regex-expose/test/flags/sticky2.js : 40.548192s
+regex-expose/test/flags/multiline.js : 26.442138s
+regex-expose/split/split_2.js : 96.928453s
+regex-expose/split/split_0.js : 72.602711s
+regex-expose/split/split_lhs.js : 110.086675s
+regex-expose/split/split_1.js : 120.011938s
+regex-expose/split/split_hard.js : 120.022305s
+regex-expose/lazy/lazy_4.js : 27.255790s
+regex-expose/lazy/lazy_3.js : 40.700702s
+regex-expose/anchors/both.js : 40.890279s
+regex-expose/anchors/left.js : 42.340597s
+regex-expose/assertions/ahead_4.js : 59.093121s
+regex-expose/assertions/ahead_6.js : 28.296831s
+regex-expose/assertions/ahead_7.js : 28.322906s
+regex-expose/assertions/ahead_3.js : 27.863357s
+regex-expose/assertions/ahead_5.js : 61.974983s
+regex-expose/assertions/ahead.js : 13.620101s
+regex-expose/assertions/ahead_9.js : 27.693592s
+regex-expose/old/simple_test.js : 12.239650s
+regex-expose/old/test_three_deep.js : 12.234332s
+regex-expose/old/replace_and_length.js : 12.508488s
+regex-expose/replace/global/global_replace_explosion.js : 12.431193s
+regex-expose/replace/single/replace_3.js : 55.771453s
+regex-expose/replace/single/callback.js : 58.139463s
+regex-expose/replace/single/replace_2.js : 42.107460s
+regex-expose/core/optional/range.js : 41.286514s
+regex-expose/core/optional/combined.js : 120.008966s
+regex-expose/core/escaping/space_class.js : 114.125725s
+regex-expose/core/escaping/escape_spacing.js : 75.765259s
+regex-expose/core/escaping/digit.js : 41.166901s
+regex-expose/core/escaping/hex.js : 42.961518s
+regex-expose/core/escaping/unicode_mode.js : 17.194940s
+regex-expose/core/escaping/word.js : 43.583913s
+regex-expose/core/escaping/ranges.js : 116.594601s
+regex-expose/core/literals/mixed_escaped.js : 45.517852s
+regex-expose/core/literals/simple_two.js : 25.943042s
+regex-expose/core/literals/simple_one.js : 25.943548s
+regex-expose/core/literals/long_example.js : 33.921365s
+regex-expose/core/literals/non_alpha.js : 32.709719s
+regex-expose/core/literals/empty_example.js : 26.916264s
+regex-expose/core/literals/multiple.js : 120.009637s
+regex-expose/core/star/star.js : 120.014136s
+regex-expose/core/star/multiple.js : 117.727019s
+regex-expose/core/alternation/words.js : 56.458753s
+regex-expose/core/alternation/many.js : 64.867931s
+regex-expose/core/alternation/exhaustive_simple.js : 76.462001s
+regex-expose/core/plus/multiple.js : 102.375726s
+regex-expose/core/loops/fixed_loop.js : 42.654945s
+regex-expose/core/loops/between_loop.js : 120.013850s
+timeout set to $120 s
+----------------timeout file list :
+regex-expose/split/split_1.js
+regex-expose/split/split_hard.js
+regex-expose/core/optional/combined.js
+regex-expose/core/literals/multiple.js
+regex-expose/core/star/star.js
+regex-expose/core/loops/between_loop.js
+-----------------------------------------
+----------------non-bench-generated file list:
+-----------------------------------------
+----------------zero query file list :
+regex-expose/test/flags/multiline.js
+regex-expose/split/split_0.js
+regex-expose/lazy/lazy_4.js
+regex-expose/anchors/both.js
+regex-expose/assertions/ahead_6.js
+regex-expose/assertions/ahead_7.js
+regex-expose/assertions/ahead_3.js
+regex-expose/assertions/ahead_9.js
+regex-expose/replace/single/replace_2.js
+-----------------------------------------
+total test file count : 55
+total normal test file count : 49
+total error test file count : 0
+total timeout test file count : 6
+total non-benchmark-generate test file count : 0
+total cost time (without warning, error and timeout) : 2814.35
+average cost time (without warning, error and timeout) : 57.44
+finishing query 0 count : 14
+finishing query 1 count : 9
+finishing query 2 count : 9
+finishing query 3 count : 2
+finishing query 4 count : 5
+finishing query 5 count : 2
+finishing query 6 count : 2
+finishing query 7 count : 5
+finishing query 8 count : 1

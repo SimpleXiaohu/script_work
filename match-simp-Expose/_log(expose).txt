@@ -1,0 +1,60 @@
+match-simp-Expose/test41.js : 42.421479s
+match-simp-Expose/test32.js : 30.400555s
+match-simp-Expose/test2.js : 28.303057s
+match-simp-Expose/test43.js : 120.106385s
+match-simp-Expose/test15.js : 120.011288s
+match-simp-Expose/test30.js : 27.501580s
+match-simp-Expose/test31.js : 26.187064s
+match-simp-Expose/test49.js : 47.873165s
+match-simp-Expose/test10.js : 42.073921s
+match-simp-Expose/test11.js : 120.009773s
+match-simp-Expose/test28.js : 120.082545s
+match-simp-Expose/test3.js : 50.605287s
+match-simp-Expose/test16.js : 40.213222s
+match-simp-Expose/test24.js : 51.425907s
+match-simp-Expose/test23.js : 27.176016s
+match-simp-Expose/test35.js : 29.356367s
+match-simp-Expose/test50.js : 120.086617s
+match-simp-Expose/test9.js : 120.078088s
+match-simp-Expose/test0.js : 44.702747s
+match-simp-Expose/test40.js : 27.668738s
+match-simp-Expose/test5.js : 36.505541s
+match-simp-Expose/test47.js : 85.712729s
+match-simp-Expose/test14.js : 67.739490s
+match-simp-Expose/test17.js : 31.301385s
+match-simp-Expose/test25.js : 27.472716s
+match-simp-Expose/test1.js : 80.471083s
+match-simp-Expose/test48.js : 43.821117s
+match-simp-Expose/test21.js : 27.573483s
+timeout set to $120 s
+----------------timeout file list :
+match-simp-Expose/test43.js
+match-simp-Expose/test15.js
+match-simp-Expose/test11.js
+match-simp-Expose/test28.js
+match-simp-Expose/test50.js
+match-simp-Expose/test9.js
+-----------------------------------------
+----------------non-bench-generated file list:
+-----------------------------------------
+----------------zero query file list :
+match-simp-Expose/test15.js
+match-simp-Expose/test30.js
+match-simp-Expose/test31.js
+match-simp-Expose/test11.js
+match-simp-Expose/test0.js
+match-simp-Expose/test14.js
+match-simp-Expose/test17.js
+match-simp-Expose/test1.js
+-----------------------------------------
+total test file count : 34
+total normal test file count : 28
+total error test file count : 0
+total timeout test file count : 6
+total non-benchmark-generate test file count : 0
+total cost time (without warning, error and timeout) : 1636.88
+average cost time (without warning, error and timeout) : 58.46
+finishing query 0 count : 3
+finishing query 1 count : 8
+finishing query 2 count : 12
+finishing query 3 count : 5

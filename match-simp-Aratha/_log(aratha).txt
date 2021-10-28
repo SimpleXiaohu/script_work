@@ -1,0 +1,53 @@
+match-simp-Aratha/test41.js : 3.357868s
+match-simp-Aratha/test32.js : 2.516886s
+match-simp-Aratha/test2.js : 3.389346s
+match-simp-Aratha/test43.js : 12.588805s
+match-simp-Aratha/test15.js : 2.450519s
+match-simp-Aratha/test30.js : 2.561900s
+match-simp-Aratha/test31.js : 2.427456s
+match-simp-Aratha/test49.js : 3.029976s
+match-simp-Aratha/test10.js : 3.555428s
+match-simp-Aratha/test11.js : 2.425968s
+match-simp-Aratha/test28.js : 2.934943s
+match-simp-Aratha/test3.js : 14.763513s
+match-simp-Aratha/test16.js : 2.457409s
+match-simp-Aratha/test24.js : 2.064402s
+match-simp-Aratha/test23.js : 2.404336s
+match-simp-Aratha/test35.js : 6.169800s
+match-simp-Aratha/test50.js : 14.842423s
+match-simp-Aratha/test9.js : 2.736987s
+match-simp-Aratha/test0.js : 3.769097s
+match-simp-Aratha/test40.js : 3.430008s
+match-simp-Aratha/test5.js : 8.962493s
+match-simp-Aratha/test47.js : 7.553320s
+match-simp-Aratha/test14.js : 5.103213s
+match-simp-Aratha/test17.js : 2.293324s
+match-simp-Aratha/test25.js : 4.348487s
+match-simp-Aratha/test1.js : 14.761548s
+match-simp-Aratha/test48.js : 4.218023s
+match-simp-Aratha/test21.js : 5.471969s
+timeout set to $120 s
+----------------timeout file list :
+-----------------------------------------
+----------------non-bench-generated file list:
+-----------------------------------------
+----------------zero query file list :
+match-simp-Aratha/test15.js
+match-simp-Aratha/test30.js
+match-simp-Aratha/test31.js
+match-simp-Aratha/test11.js
+match-simp-Aratha/test0.js
+match-simp-Aratha/test14.js
+match-simp-Aratha/test17.js
+-----------------------------------------
+total test file count : 28
+total normal test file count : 28
+total error test file count : 0
+total timeout test file count : 0
+total non-benchmark-generate test file count : 0
+total cost time (without warning, error and timeout) : 146.59
+average cost time (without warning, error and timeout) : 5.24
+finishing query 0 count : 3
+finishing query 1 count : 7
+finishing query 2 count : 12
+finishing query 3 count : 6

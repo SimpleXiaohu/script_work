@@ -1,0 +1,75 @@
+replace-simp-Aratha/test6.js : 4.391928s
+replace-simp-Aratha/test41.js : 4.293593s
+replace-simp-Aratha/test42.js : 3.422036s
+replace-simp-Aratha/test39.js : 2.799531s
+replace-simp-Aratha/test2.js : 3.023917s
+replace-simp-Aratha/test43.js : 3.386181s
+replace-simp-Aratha/test22.js : 4.948531s
+replace-simp-Aratha/test30.js : 8.224665s
+replace-simp-Aratha/test31.js : 3.132909s
+replace-simp-Aratha/test13.js : 2.243010s
+replace-simp-Aratha/test10.js : 4.526484s
+replace-simp-Aratha/test19.js : 2.665993s
+replace-simp-Aratha/test28.js : 2.531307s
+replace-simp-Aratha/test3.js : 16.967570s
+replace-simp-Aratha/test16.js : 2.307254s
+replace-simp-Aratha/test24.js : 3.056319s
+replace-simp-Aratha/test18.js : 2.636799s
+replace-simp-Aratha/test23.js : 3.366923s
+replace-simp-Aratha/test35.js : 5.679931s
+replace-simp-Aratha/test37.js : 2.616421s
+replace-simp-Aratha/test7.js : 5.652977s
+replace-simp-Aratha/test8.js : 2.729793s
+replace-simp-Aratha/test0.js : 2.158374s
+replace-simp-Aratha/test26.js : 2.937184s
+replace-simp-Aratha/test20.js : 3.633677s
+replace-simp-Aratha/test40.js : 2.355134s
+replace-simp-Aratha/test5.js : 3.352965s
+replace-simp-Aratha/test29.js : 2.708635s
+replace-simp-Aratha/test14.js : 2.655327s
+replace-simp-Aratha/test38.js : 2.553560s
+replace-simp-Aratha/test17.js : 3.037763s
+replace-simp-Aratha/test12.js : 2.668052s
+replace-simp-Aratha/test34.js : 2.547350s
+replace-simp-Aratha/test25.js : 4.493997s
+replace-simp-Aratha/test44.js : 2.875079s
+replace-simp-Aratha/test27.js : 10.894124s
+replace-simp-Aratha/test1.js : 8.682744s
+replace-simp-Aratha/test21.js : 5.081849s
+timeout set to $120 s
+----------------timeout file list :
+-----------------------------------------
+----------------non-bench-generated file list:
+-----------------------------------------
+----------------zero query file list :
+replace-simp-Aratha/test6.js
+replace-simp-Aratha/test42.js
+replace-simp-Aratha/test39.js
+replace-simp-Aratha/test13.js
+replace-simp-Aratha/test28.js
+replace-simp-Aratha/test3.js
+replace-simp-Aratha/test24.js
+replace-simp-Aratha/test23.js
+replace-simp-Aratha/test37.js
+replace-simp-Aratha/test8.js
+replace-simp-Aratha/test40.js
+replace-simp-Aratha/test29.js
+replace-simp-Aratha/test14.js
+replace-simp-Aratha/test38.js
+replace-simp-Aratha/test17.js
+replace-simp-Aratha/test12.js
+replace-simp-Aratha/test25.js
+replace-simp-Aratha/test44.js
+replace-simp-Aratha/test1.js
+replace-simp-Aratha/test21.js
+-----------------------------------------
+total test file count : 38
+total normal test file count : 38
+total error test file count : 0
+total timeout test file count : 0
+total non-benchmark-generate test file count : 0
+total cost time (without warning, error and timeout) : 157.24
+average cost time (without warning, error and timeout) : 4.14
+finishing query 0 count : 12
+finishing query 1 count : 20
+finishing query 2 count : 6

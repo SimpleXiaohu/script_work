@@ -1,0 +1,99 @@
+replace-simp-Expose/test6.js : 45.923994s
+replace-simp-Expose/test41.js : 120.072393s
+replace-simp-Expose/test42.js : 64.377753s
+replace-simp-Expose/test39.js : 90.327363s
+replace-simp-Expose/test2.js : 42.846684s
+replace-simp-Expose/test43.js : 120.119021s
+replace-simp-Expose/test22.js : 120.100379s
+replace-simp-Expose/test30.js : 120.108021s
+replace-simp-Expose/test31.js : 120.121681s
+replace-simp-Expose/test13.js : 120.086451s
+replace-simp-Expose/test10.js : 120.106869s
+replace-simp-Expose/test19.js : 120.036244s
+replace-simp-Expose/test28.js : 64.153527s
+replace-simp-Expose/test3.js : 120.082640s
+replace-simp-Expose/test16.js : 29.568179s
+replace-simp-Expose/test24.js : 120.111094s
+replace-simp-Expose/test18.js : 65.551600s
+replace-simp-Expose/test23.js : 120.012258s
+replace-simp-Expose/test35.js : 120.112836s
+replace-simp-Expose/test37.js : 37.410648s
+replace-simp-Expose/test7.js : 120.111285s
+replace-simp-Expose/test8.js : 120.030869s
+replace-simp-Expose/test0.js : 120.033993s
+replace-simp-Expose/test26.js : 120.077925s
+replace-simp-Expose/test20.js : 120.111846s
+replace-simp-Expose/test40.js : 29.032583s
+replace-simp-Expose/test5.js : 120.088936s
+replace-simp-Expose/test29.js : 60.655149s
+replace-simp-Expose/test14.js : 51.773980s
+replace-simp-Expose/test38.js : 61.005568s
+replace-simp-Expose/test17.js : 120.097388s
+replace-simp-Expose/test12.js : 120.109517s
+replace-simp-Expose/test34.js : 60.314596s
+replace-simp-Expose/test25.js : 120.099070s
+replace-simp-Expose/test44.js : 59.052994s
+replace-simp-Expose/test27.js : 120.108792s
+replace-simp-Expose/test1.js : 120.103617s
+replace-simp-Expose/test21.js : 98.774417s
+timeout set to $120 s
+----------------timeout file list :
+replace-simp-Expose/test41.js
+replace-simp-Expose/test43.js
+replace-simp-Expose/test22.js
+replace-simp-Expose/test30.js
+replace-simp-Expose/test31.js
+replace-simp-Expose/test13.js
+replace-simp-Expose/test10.js
+replace-simp-Expose/test19.js
+replace-simp-Expose/test3.js
+replace-simp-Expose/test24.js
+replace-simp-Expose/test23.js
+replace-simp-Expose/test35.js
+replace-simp-Expose/test7.js
+replace-simp-Expose/test8.js
+replace-simp-Expose/test0.js
+replace-simp-Expose/test26.js
+replace-simp-Expose/test20.js
+replace-simp-Expose/test5.js
+replace-simp-Expose/test17.js
+replace-simp-Expose/test12.js
+replace-simp-Expose/test25.js
+replace-simp-Expose/test27.js
+replace-simp-Expose/test1.js
+-----------------------------------------
+----------------non-bench-generated file list:
+-----------------------------------------
+----------------zero query file list :
+replace-simp-Expose/test6.js
+replace-simp-Expose/test41.js
+replace-simp-Expose/test42.js
+replace-simp-Expose/test39.js
+replace-simp-Expose/test22.js
+replace-simp-Expose/test30.js
+replace-simp-Expose/test13.js
+replace-simp-Expose/test28.js
+replace-simp-Expose/test18.js
+replace-simp-Expose/test23.js
+replace-simp-Expose/test8.js
+replace-simp-Expose/test0.js
+replace-simp-Expose/test20.js
+replace-simp-Expose/test40.js
+replace-simp-Expose/test5.js
+replace-simp-Expose/test29.js
+replace-simp-Expose/test14.js
+replace-simp-Expose/test38.js
+replace-simp-Expose/test34.js
+replace-simp-Expose/test44.js
+replace-simp-Expose/test21.js
+-----------------------------------------
+total test file count : 61
+total normal test file count : 38
+total error test file count : 0
+total timeout test file count : 23
+total non-benchmark-generate test file count : 0
+total cost time (without warning, error and timeout) : 3622.81
+average cost time (without warning, error and timeout) : 95.34
+finishing query 0 count : 15
+finishing query 1 count : 21
+finishing query 2 count : 2

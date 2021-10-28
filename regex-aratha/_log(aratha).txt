@@ -1,0 +1,97 @@
+regex-aratha/test/flags/sticky2.js : 3.467550s
+regex-aratha/test/flags/multiline.js : 2.668649s
+regex-aratha/split/split_2.js : 5.008904s
+regex-aratha/split/split_0.js :
+/home/popl2022/aratha/lib/smt.js:148
+                    throw new Error(stmt[1]);
+                    ^
+
+Error: Internal exception: java.lang.Exception: Multiple definitions found for all_6_0, input is not straightline
+    at /home/popl2022/aratha/lib/smt.js:148:27
+    at OSTRICH._consume (/home/popl2022/aratha/lib/smt.js:130:13)
+    at /home/popl2022/aratha/lib/smt.js:26:22
+    at Parser.parse (/home/popl2022/aratha/lib/sexpr.js:17:17)
+    at Socket.<anonymous> (/home/popl2022/aratha/lib/smt.js:25:20)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:280:11)
+    at Socket.Readable.push (internal/streams/readable.js:223:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:188:23)
+regex-aratha/split/split_lhs.js : 4.431255s
+regex-aratha/split/split_1.js : 4.776004s
+regex-aratha/split/split_hard.js :
+model error: constraint (not (js.< (GetField (js.split (str var0) "/(a)/" 2) (Str "length")) (Num 100))) failed to validate in {"var0":""}
+regex-aratha/lazy/lazy_4.js : 2.506443s
+regex-aratha/lazy/lazy_3.js : 3.452979s
+regex-aratha/anchors/both.js : 15.539243s
+regex-aratha/anchors/left.js : 3.259872s
+regex-aratha/assertions/ahead_4.js : 4.416174s
+regex-aratha/assertions/ahead_6.js : 2.755098s
+regex-aratha/assertions/ahead_7.js : 2.847595s
+regex-aratha/assertions/ahead_3.js : 3.381907s
+regex-aratha/assertions/ahead_5.js : 3.783829s
+regex-aratha/assertions/ahead.js : 2.334664s
+regex-aratha/assertions/ahead_9.js : 2.795881s
+regex-aratha/old/simple_test.js : 2.440449s
+regex-aratha/old/test_three_deep.js : 4.951630s
+regex-aratha/old/replace_and_length.js : 6.922299s
+regex-aratha/replace/global/global_replace_explosion.js : 4.763448s
+regex-aratha/replace/single/replace_3.js : 4.738329s
+regex-aratha/replace/single/callback.js : 2.439467s
+regex-aratha/replace/single/replace_2.js : 3.779148s
+regex-aratha/core/optional/range.js : 2.957534s
+regex-aratha/core/optional/combined.js : 5.743538s
+regex-aratha/core/escaping/space_class.js : 7.540626s
+regex-aratha/core/escaping/escape_spacing.js : 6.149822s
+regex-aratha/core/escaping/digit.js : 3.552440s
+regex-aratha/core/escaping/hex.js : 3.819699s
+regex-aratha/core/escaping/unicode_mode.js : 3.942391s
+regex-aratha/core/escaping/word.js : 3.611644s
+regex-aratha/core/escaping/ranges.js : 7.261791s
+regex-aratha/core/literals/mixed_escaped.js : 3.158581s
+regex-aratha/core/literals/simple_two.js : 3.275867s
+regex-aratha/core/literals/simple_one.js : 2.673091s
+regex-aratha/core/literals/long_example.js : 3.104754s
+regex-aratha/core/literals/non_alpha.js : 2.576355s
+regex-aratha/core/literals/empty_example.js : 2.401722s
+regex-aratha/core/literals/multiple.js : 4.392039s
+regex-aratha/core/star/star.js : 5.714063s
+regex-aratha/core/star/multiple.js : 5.027660s
+regex-aratha/core/alternation/words.js : 3.691009s
+regex-aratha/core/alternation/many.js : 3.559758s
+regex-aratha/core/alternation/exhaustive_simple.js : 3.864492s
+regex-aratha/core/plus/multiple.js : 5.413822s
+regex-aratha/core/loops/fixed_loop.js : 3.304757s
+regex-aratha/core/loops/between_loop.js : 8.956534s
+timeout set to $120 s
+----------------timeout file list :
+-----------------------------------------
+----------------non-bench-generated file list:
+-----------------------------------------
+----------------zero query file list :
+regex-aratha/test/flags/multiline.js
+regex-aratha/lazy/lazy_4.js
+regex-aratha/anchors/both.js
+regex-aratha/assertions/ahead_6.js
+regex-aratha/assertions/ahead_7.js
+regex-aratha/assertions/ahead_3.js
+regex-aratha/assertions/ahead_9.js
+regex-aratha/replace/global/global_replace_explosion.js
+regex-aratha/replace/single/replace_2.js
+-----------------------------------------
+total test file count : 49
+total normal test file count : 47
+total error test file count : 2
+total timeout test file count : 0
+total non-benchmark-generate test file count : 0
+total cost time (without warning, error and timeout) : 218.91
+average cost time (without warning, error and timeout) : 4.66
+finishing query 0 count : 14
+finishing query 1 count : 9
+finishing query 2 count : 9
+finishing query 3 count : 2
+finishing query 4 count : 5
+finishing query 5 count : 1
+finishing query 6 count : 3
+finishing query 7 count : 3
+finishing query 9 count : 3

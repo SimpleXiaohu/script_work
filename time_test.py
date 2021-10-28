@@ -2,16 +2,16 @@ from timeit import default_timer as timer
 import subprocess, os, sys, re, signal
 
 if "-a" in sys.argv[2]:
-    command = "../../aratha/node_modules/.bin/jalangi2 --analysis ../../aratha/index.js"
+    command = "../aratha/node_modules/.bin/jalangi2 --analysis ../aratha/index.js"
     logfileStream = open(f"{sys.argv[1]}_log(aratha).txt", "w")
 else:
-    command = "EXPOSE_PRINT_PATHS=1 ../../ExpoSE/expoSE"
+    command = "EXPOSE_PRINT_PATHS=1 ../ExpoSE/expoSE"
     logfileStream = open(f"{sys.argv[1]}_log(expose).txt", "w")
 timeoutList = []
 zeroConstraitsList = []
 zeroQueryList = []
 queryCountDict = {}
-timeout = 60
+timeout = 120
 unHandled = open(f"{sys.argv[1]}_unhandled(aratha).txt", "w")
 totalNormalTime = 0
 totalNormalNum = 0
