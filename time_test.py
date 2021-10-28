@@ -16,6 +16,7 @@ unHandled = open(f"{sys.argv[1]}_unhandled(aratha).txt", "w")
 totalNormalTime = 0
 totalNormalNum = 0
 totalErrorNum = 0
+totalQueryNum = 0
 
 def updateQCDict(key):
     if(key in queryCountDict):
@@ -71,7 +72,7 @@ def runAndLog(command, testFile):
         logfileStream.flush()
         totalNormalNum += 1
     queryCount = len(set(re.findall(r"^(\d)$", outs, re.M)))
-    if(queryCount == 1):
+    if(queryCount == 0):
         zeroQueryList.append(testFile)
     updateQCDict(queryCount)
     totalNormalTime += oneTime
@@ -82,25 +83,26 @@ logfileStream.write("----------------timeout file list :\n")
 for file in timeoutList:
     logfileStream.write(file + "\n")
 logfileStream.write("-----------------------------------------\n")
-logfileStream.write("----------------non-bench-generated file list:\n")
-for file in zeroConstraitsList:
-    logfileStream.write(file + "\n")
-logfileStream.write("-----------------------------------------\n")
-logfileStream.write("----------------zero query file list :\n")
-for file in zeroQueryList:
-    logfileStream.write(file + "\n")
-logfileStream.write("-----------------------------------------\n")
+# logfileStream.write("----------------non-bench-generated file list:\n")
+# for file in zeroConstraitsList:
+    # logfileStream.write(file + "\n")
+# logfileStream.write("-----------------------------------------\n")
+# logfileStream.write("----------------zero query file list :\n")
+# for file in zeroQueryList:
+    # logfileStream.write(file + "\n")
+# logfileStream.write("-----------------------------------------\n")
 
 totalNum = totalNormalNum + totalErrorNum + len(timeoutList) + len(zeroConstraitsList)
-logfileStream.write(f"total test file count : {totalNum}\n")
-logfileStream.write(f"total normal test file count : {totalNormalNum}\n")
-logfileStream.write(f"total error test file count : {totalErrorNum}\n")
-logfileStream.write(f"total timeout test file count : {len(timeoutList)}\n")
-logfileStream.write(f"total non-benchmark-generate test file count : {len(zeroConstraitsList)}\n")
-logfileStream.write(f"total cost time (without warning, error and timeout) : {totalNormalTime:.2f}\n") 
-logfileStream.write(f"average cost time (without warning, error and timeout) : {totalNormalTime/totalNormalNum:.2f}\n") 
+logfileStream.write(f"The tested file number : {totalNum}\n")
+logfileStream.write(f"The normal file number : {totalNormalNum}\n")
+logfileStream.write(f"The error file number : {totalErrorNum}\n")
+logfileStream.write(f"The timeout file number : {len(timeoutList)}\n")
+#  logfileStream.write(f"total non-benchmark-generate test file count : {len(zeroConstraitsList)}\n")
+logfileStream.write(f"total cost time (without warning, error and timeout) : {totalNormalTime:.2f} s\n") 
+logfileStream.write(f"average cost time (without warning, error and timeout) : {totalNormalTime/totalNormalNum:.2f} s\n") 
 queryCountTuple = sorted(queryCountDict.items(), key = lambda d : d[0])
 for t in queryCountTuple:
+    totalQueryNum += t[0] * t[1]
     logfileStream.write(f"finishing query {t[0]} count : {t[1]}\n")
 logfileStream.close()
 unHandled.close()
